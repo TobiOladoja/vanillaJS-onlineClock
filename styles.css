@@ -8,11 +8,11 @@
 }
 
 body {
-  background: white;
+  background: url('./pattern.png'); /* Created pattern in pattern.flaticon.com */
 }
 
 .main {
-  background: black;
+  background: white;
   color: white;
   width: 400px;
   height: 175px;
@@ -41,4 +41,5 @@ body {
   height: 100%; /* Makes it fill the the inside of parent div as oppose to just a line*/
   padding-top: 23px; /* To push it down to middle */
   font-family: 'Orbitron', sans-serif; /* Imported font from google fonts*/
+  color: yellow;
 }
