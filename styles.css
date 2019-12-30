@@ -10,8 +10,23 @@ body {
 }
 
 .main {
-  background: rgb(141, 147, 153);
+  background: black;
+  color: white;
   width: 400px;
   height: 175px;
   margin: 100px auto; /* 'Auto' is to center it and px prior pushes it down*/
+  position: relative; /* So it's child class '.badge' can be positioned within*/
+}
+
+.badge {
+  background: #e66357;
+  color: white;
+  padding: 5px 10px;
+  width: 150px; /* Width of the red badge */
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  /* Top is a negative number, so it can be positioned ontop of .main div*/
+  top: -15px; /* Works because parent div '.main' position is now: 'relative' */
+  left: 30%; /* Works because parent div '.main' position is now: 'relative' */
 }
