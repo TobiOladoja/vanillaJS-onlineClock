@@ -19,6 +19,7 @@ body {
   margin: 100px auto; /* 'Auto' is to center it and px prior pushes it down*/
   position: relative; /* So it's child class '.badge' can be positioned within*/
   padding: 30px; /* Room on the sides of the div*/
+  border-radius: 15%;
 }
 
 .badge {
@@ -32,6 +33,7 @@ body {
   /* Top is a negative number, so it can be positioned ontop of .main div*/
   top: -15px; /* Works because parent div '.main' position is now: 'relative' */
   left: 30%; /* Works because parent div '.main' position is now: 'relative' */
+  border-radius: 15%;
 }
 
 .clock {
@@ -42,4 +44,5 @@ body {
   padding-top: 23px; /* To push it down to middle */
   font-family: 'Orbitron', sans-serif; /* Imported font from google fonts*/
   color: yellow;
+  border-radius: 15%;
 }
